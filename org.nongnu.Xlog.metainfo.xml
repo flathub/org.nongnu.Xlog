@@ -6,7 +6,9 @@
   <provides>
     <binary>xlog</binary>
   </provides>
+  <launchable type="desktop-id">org.nongnu.Xlog.desktop</launchable>
   <name>Xlog</name>
+  <developer_name>Andy Stewart</developer_name>
   <summary>Logging program for Amateur Radio Operators</summary>
   <description>
     <p>
