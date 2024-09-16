@@ -28,6 +28,9 @@
   <url type="homepage">https://xlog.nongnu.org</url>
   <url type="bugtracker">https://savannah.nongnu.org/bugs/?group=xlog</url>
   <releases>
+    <release version="2.0.25" date="2024-09-16">
+      <description></description>
+    </release>
     <release version="2.0.24" date="2021-10-03"/>
   </releases>
   <content_rating type="oars-1.1"/>

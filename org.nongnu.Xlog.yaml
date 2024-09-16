@@ -36,8 +36,8 @@ modules:
   - name: xlog
     sources:
       - type: archive
-        url: https://download.savannah.nongnu.org/releases/xlog/xlog-2.0.24.tar.gz
-        sha256: 8d453ac6ddc7f5b63d0804114c5423a6b96c0bbed5c23201ffab1244dcc4f8bc
+        url: https://download.savannah.nongnu.org/releases/xlog/xlog-2.0.25.tar.gz
+        sha256: aa8b7bb603c7c4399003739c486e099f4723a23164df7d4a5901acc4494dd3fa
         x-checker-data:
           type: anitya
           project-id: 15625
