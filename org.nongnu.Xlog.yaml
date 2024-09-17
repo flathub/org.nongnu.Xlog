@@ -3,6 +3,7 @@ runtime: org.freedesktop.Platform
 runtime-version: 23.08
 sdk: org.freedesktop.Sdk
 command: xlog
+rename-icon: xlog
 rename-desktop-file: xlog.desktop
 finish-args:
   - --device=all
@@ -36,8 +37,8 @@ modules:
   - name: xlog
     sources:
       - type: archive
-        url: https://download.savannah.nongnu.org/releases/xlog/xlog-2.0.24.tar.gz
-        sha256: 8d453ac6ddc7f5b63d0804114c5423a6b96c0bbed5c23201ffab1244dcc4f8bc
+        url: https://download.savannah.nongnu.org/releases/xlog/xlog-2.0.25.tar.gz
+        sha256: 3580b72e0a0b5e72505117194dcdb11cecce95ea2dad6b4e11330181a75fdaa5
         x-checker-data:
           type: anitya
           project-id: 15625
@@ -45,6 +46,4 @@ modules:
       - type: file
         path: org.nongnu.Xlog.metainfo.xml
     post-install:
-      - desktop-file-edit --set-key=Icon --set-value=org.nongnu.Xlog /app/share/applications/xlog.desktop
-      - install -Dm644 data/pixmaps/xlog.svg /app/share/icons/hicolor/scalable/apps/org.nongnu.Xlog.svg
       - install -Dm644 org.nongnu.Xlog.metainfo.xml /app/share/metainfo/org.nongnu.Xlog.metainfo.xml
