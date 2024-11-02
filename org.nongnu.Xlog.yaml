@@ -1,6 +1,6 @@
 app-id: org.nongnu.Xlog
 runtime: org.freedesktop.Platform
-runtime-version: 23.08
+runtime-version: 24.08
 sdk: org.freedesktop.Sdk
 command: xlog
 rename-icon: xlog
