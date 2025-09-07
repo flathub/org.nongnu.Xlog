@@ -22,7 +22,7 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://xlog.nongnu.org/xlog.jpg</image>
+      <image type="source">https://raw.githubusercontent.com/flathub/org.nongnu.Xlog/refs/heads/master/screenshot.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://xlog.nongnu.org</url>
