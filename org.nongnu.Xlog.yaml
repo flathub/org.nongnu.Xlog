@@ -1,6 +1,6 @@
 app-id: org.nongnu.Xlog
 runtime: org.freedesktop.Platform
-runtime-version: 24.08
+runtime-version: 25.08
 sdk: org.freedesktop.Sdk
 command: xlog
 rename-icon: xlog
@@ -35,6 +35,8 @@ modules:
           url-template: https://github.com/Hamlib/Hamlib/releases/download/$version/hamlib-$version.tar.gz
 
   - name: xlog
+    build-options:
+      cflags: -std=gnu17
     sources:
       - type: archive
         url: https://download.savannah.nongnu.org/releases/xlog/xlog-2.0.25.tar.gz
