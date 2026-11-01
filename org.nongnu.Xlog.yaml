@@ -1,6 +1,6 @@
 app-id: org.nongnu.Xlog
 runtime: org.freedesktop.Platform
-runtime-version: 25.08
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: xlog
 rename-icon: xlog
@@ -36,6 +36,8 @@ modules:
   - name: xlog
     build-options:
       cflags: -std=gnu17
+    post-install:
+      - install -Dm644 org.nongnu.Xlog.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: archive
         url: https://download.savannah.nongnu.org/releases/xlog/xlog-2.0.25.tar.gz
@@ -46,5 +48,3 @@ modules:
           url-template: https://download.savannah.nongnu.org/releases/xlog/xlog-$version.tar.gz
       - type: file
         path: org.nongnu.Xlog.metainfo.xml
-    post-install:
-      - install -Dm644 org.nongnu.Xlog.metainfo.xml /app/share/metainfo/org.nongnu.Xlog.metainfo.xml
